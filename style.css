@@ -9,10 +9,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid gray;
+  background-color: burlywood;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
-  color: darksalmon;
+  color: green;
   padding-left: 40px;
 }
 
@@ -33,14 +36,14 @@ h1 {
 }
 
 .content1 p {
-  padding: 140px 0 50px;
+  padding: 200px 0 60px;
   font-size: 45px;
 }
 
 .content2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .more_info {
