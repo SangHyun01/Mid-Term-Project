@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+h1 {
+  color: darksalmon;
+  padding-left: 40px;
+}
+
+.nav {
+  display: flex;
+  padding-right: 100px;
+  padding-top: 10px;
+}
+.nav span {
+  display: inline-block;
+  margin: 0 50px;
+}
