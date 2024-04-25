@@ -3,6 +3,7 @@ body {
   margin: 0;
 }
 
+/* header */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -23,4 +24,41 @@ h1 {
 .nav span {
   display: inline-block;
   margin: 0 50px;
+}
+
+/* Section */
+.content1 {
+  display: flex;
+  justify-content: center;
+}
+
+.content1 p {
+  padding: 140px 0 50px;
+  font-size: 45px;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.more_info {
+  display: flex;
+  justify-content: center;
+}
+
+#knowMore {
+  border: 2px solid green;
+  border-radius: 8px;
+  background-color: lightgreen;
+}
+
+#knowMore a {
+  text-decoration: none;
+}
+
+#knowMore a:hover {
+  font-size: larger;
+  transition: 0.35s ease;
 }
