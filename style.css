@@ -9,7 +9,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 1px solid gray;
-  background-color: burlywood;
+  background-color: rgb(197, 241, 176);
   position: fixed;
   width: 100%;
 }
@@ -49,6 +49,7 @@ h1 {
 .more_info {
   display: flex;
   justify-content: center;
+  padding-bottom: 110px;
 }
 
 #knowMore {
@@ -64,4 +65,53 @@ h1 {
 #knowMore a:hover {
   font-size: larger;
   transition: 0.35s ease;
+}
+
+/* About me */
+.aboutme {
+  padding-top: 15px;
+  scroll-margin-top: 100px;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  margin-left: 110px;
+}
+
+table,
+td,
+tr {
+  border: 1px solid black;
+}
+
+td:nth-child(odd) {
+  color: tomato;
+  text-align: center;
+}
+
+tr :nth-child(even):hover {
+  background-color: #a2ff56;
+  color: #403e10;
+  font-weight: bold;
+
+  box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
+    #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: line;
+}
+
+.introduce {
+  display: flex;
+  float: left;
+  padding-left: 80px;
+}
+
+table {
+  margin-left: 200px;
+  width: 700px;
 }
