@@ -77,6 +77,9 @@ h2 {
   padding-left: 200px;
   padding-bottom: 40px;
   padding-top: 15px;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 img {
@@ -145,6 +148,7 @@ table {
   height: 150px;
   background-color: darksalmon;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .back {
@@ -154,6 +158,7 @@ table {
   height: 150px;
   background-color: darkseagreen;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .tools {
@@ -163,6 +168,7 @@ table {
   height: 150px;
   background-color: fuchsia;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -183,5 +189,34 @@ li {
   display: flex;
   justify-content: center;
   font-size: x-large;
-  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#canHandle {
+  padding-left: 200px;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
+.mysql,
+.spring,
+.react,
+.js,
+.css,
+.html,
+.java,
+.git,
+.github,
+.bootstrap,
+.sass,
+.jquery,
+.c,
+.python {
+  width: 90px;
+  height: 90px;
+  margin: 0;
 }
