@@ -11,6 +11,7 @@ body {
   border-bottom: 1px solid gray;
   background-color: rgb(197, 241, 176);
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -215,3 +216,51 @@ li {
 }
 
 /* projects */
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px;
+  border: 1px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: darkcyan;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.btn.white {
+  background-color: yellow;
+  color: black;
+  /* 다른 스타일을 여기에 추가할 수 있습니다 */
+}
+
+.btn.white:hover {
+  background-color: #ccc314;
+}
+
+.image img {
+  width: 350px;
+  height: 450px;
+  border-radius: 5px;
+}
