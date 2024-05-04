@@ -202,21 +202,16 @@ li {
   font-size: larger;
 }
 
-.mysql,
-.spring,
-.react,
-.js,
-.css,
-.html,
-.java,
-.git,
-.github,
-.bootstrap,
-.sass,
-.jquery,
-.c,
-.python {
+.icon {
   width: 90px;
   height: 90px;
   margin: 0;
 }
+
+.icon:hover {
+  width: 97px;
+  height: 97px;
+  transition: 0.15s ease-in;
+}
+
+/* projects */

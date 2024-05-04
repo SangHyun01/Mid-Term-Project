@@ -19,6 +19,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("n-2kk_ZLJ13J7VDWK");
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -125,25 +134,25 @@
           <p>front-end</p>
           <ul>
             <li>
-              <img src="icon/React-Dark.svg" class="react" />
+              <img src="icon/React-Dark.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/JavaScript.svg" class="js" />
+              <img src="icon/JavaScript.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/CSS.svg" class="css" />
+              <img src="icon/CSS.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/HTML.svg" class="html" />
+              <img src="icon/HTML.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/Bootstrap.svg" class="bootstrap" />
+              <img src="icon/Bootstrap.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/Sass.svg" class="sass" />
+              <img src="icon/Sass.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/JQuery.svg" class="jquery" />
+              <img src="icon/JQuery.svg" class="icon" />
             </li>
           </ul>
         </div>
@@ -151,19 +160,19 @@
           <p>back-end</p>
           <ul>
             <li>
-              <img src="icon/Java-Dark.svg" class="java" />
+              <img src="icon/Java-Dark.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/MySQL-Dark.svg" class="mysql" />
+              <img src="icon/MySQL-Dark.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/Spring-Dark.svg" class="spring" />
+              <img src="icon/Spring-Dark.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/C.svg" class="c" />
+              <img src="icon/C.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/Python-Dark.svg" class="python" />
+              <img src="icon/Python-Dark.svg" class="icon" />
             </li>
           </ul>
         </div>
@@ -171,17 +180,68 @@
           <p>tools</p>
           <ul>
             <li>
-              <img src="icon/Git.svg" class="git" />
+              <img src="icon/Git.svg" class="icon" />
             </li>
             <li>
-              <img src="icon/Github-Dark.svg" class="github" />
-            </li>
-            <li>
-              <i class="fa-brands fa-slack fa-5x"></i>
+              <img src="icon/Github-Dark.svg" class="icon" />
             </li>
           </ul>
         </div>
       </div>
+      <!--category-->
     </div>
+    <!--skills-->
+    <div class="projects">
+      <h2>Projects</h2>
+    </div>
+    <!--contact-->
+    <div class="contact">
+      <h2>Contact</h2>
+      <div class="contact-form">
+        <input type="text" id="name" placeholder="성함을 입력해주세요" />
+        <input type="text" id="email" placeholder="메일 주소를 입력해주세요" />
+        <input
+          type="text"
+          id="phone"
+          placeholder="연락처를 입력해주세요 (생략 가능)"
+        />
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="내용을 입력해주세요 "
+        ></textarea>
+        <input
+          type="button"
+          name="submit"
+          class="btn white"
+          value="메일보내기"
+          onclick="sendMail()"
+        />
+      </div>
+    </div>
+    <script>
+      function sendMail() {
+        (function () {
+          emailjs.init("n-2kk_ZLJ13J7VDWK");
+        })();
+
+        let params = {
+          name: document.querySelector("#name").value,
+          email: document.querySelector("#email").value,
+          phone: document.querySelector("#phone").value,
+          message: document.querySelector("#message").value,
+        };
+
+        let serviceID = "service_pkj5kk5";
+        let templateID = "template_tzfhd29";
+
+        emailjs
+          .send(serviceID, templateID, params)
+          .then((res) => {
+            alert("전송되었습니다!");
+          })
+          .catch();
+      }
+    </script>
   </body>
 </html>
