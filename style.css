@@ -70,7 +70,7 @@ h1 {
 
 /* About me */
 .myimage img {
-  border-radius: 50%;
+  border-radius: 20px;
   height: 250px;
 }
 
