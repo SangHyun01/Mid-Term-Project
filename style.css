@@ -54,17 +54,19 @@ h1 {
 }
 
 #knowMore {
-  border: 2px solid green;
-  border-radius: 8px;
+  border: 1px solid green;
+  border-radius: 5px;
   background-color: lightgreen;
+  box-shadow: 0px 0px 5px #444;
 }
 
 #knowMore a {
   text-decoration: none;
+  color: black;
 }
 
 #knowMore a:hover {
-  font-size: larger;
+  font-size: large;
   transition: 0.35s ease;
 }
 
@@ -90,9 +92,11 @@ h1 {
 }
 
 h2 {
-  padding-left: 200px;
+  display: flex;
+  justify-content: center;
+  /* padding-left: 200px; */
   padding-bottom: 40px;
-  padding-top: 15px;
+  padding-top: 30px;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -115,10 +119,11 @@ img {
 
 #skills {
   padding-top: 60px;
+  padding-bottom: 100px;
 }
 .skills {
   display: flex;
-  padding: 80px 80px;
+  /* padding: 80px 100px; */
 }
 
 .front {
@@ -174,7 +179,8 @@ li {
 }
 
 #canHandle {
-  padding-left: 200px;
+  display: flex;
+  justify-content: center;
   font-family: "Jua", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -194,6 +200,41 @@ li {
 }
 
 /* projects */
+.projects-wrap {
+  background-color: #c5ebaa;
+}
+
+.project-card {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 500px;
+  width: 400px;
+  margin: 40px 30px 40px;
+  background-color: #41b06e;
+  box-shadow: 0px 0px 5px #444;
+}
+
+.info-title {
+  padding: 3px 0 3px 15px;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.info-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-card h2 {
+  padding-top: 15px;
+}
+.project-info {
+  margin-top: 40px;
+}
+
+/* contact */
 .form-wrap {
   display: flex;
   justify-content: space-between;
